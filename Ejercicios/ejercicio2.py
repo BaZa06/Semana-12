@@ -6,7 +6,7 @@ try:
     mi_archivo = open(ruta + nombre_achivo, 'r')
     lineas = mi_archivo.readlines()
     contador_lineas = len(lineas)
-    mi_archivo.write(f"\nEl archivo tiene {contador_lineas} líneas")
+    print(f"El archivo contiene {contador_lineas} líneas")
     mi_archivo.close()
 except FileNotFoundError:
     print("El archivo no se enccuentra en la ruta")
